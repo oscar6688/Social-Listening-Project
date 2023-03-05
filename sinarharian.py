@@ -1,10 +1,11 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 import csv
 import time
-from fake_useragent import UserAgent
 import re
 import requests 
+import sys
 
 def english_months_converter(malay_month):
     if "Januari" in malay_month:
